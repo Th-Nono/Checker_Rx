@@ -1,3 +1,3 @@
 <?php 
- echo "Checker_Rx";
+ 	require_once 'html/pages/auths/auth-login-v2.html';
  ?>
