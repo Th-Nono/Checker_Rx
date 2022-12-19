@@ -21,9 +21,9 @@
     </div>
     <!-- app-root @e -->
     <!-- JavaScript -->
-    <script src="assets/js/bundle.js?ver=2.8.0"></script>
-    <script src="assets/js/scripts.js?ver=2.8.0"></script>
-    <script src="assets/js/charts/chart-crypto.js?ver=2.8.0"></script>
+    <script src="admin/assets/js/bundle.js?ver=2.8.0"></script>
+    <script src="admin/assets/js/scripts.js?ver=2.8.0"></script>
+    <script src="admin/assets/js/charts/chart-crypto.js?ver=2.8.0"></script>
 </body>
 
 </html>

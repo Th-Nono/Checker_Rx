@@ -1,6 +1,7 @@
 <?php 
 
     require_once 'admin/control/loginScript.php';
+
  ?>
 <!DOCTYPE html>
 <html lang="zxx" class="js">
@@ -15,8 +16,8 @@
     <!-- Page Title  -->
     <title>Checker_Rx | Connexion</title>
     <!-- StyleSheets  -->
-    <link rel="stylesheet" href="assets/css/dashlite.css?ver=2.8.0">
-    <link id="skin-default" rel="stylesheet" href="assets/css/theme.css?ver=2.8.0">
+    <link rel="stylesheet" href="admin/assets/css/dashlite.css?ver=2.8.0">
+    <link id="skin-default" rel="stylesheet" href="admin/assets/css/theme.css?ver=2.8.0">
 </head>
 
 <body class="nk-body bg-white npc-general pg-auth">
@@ -39,32 +40,46 @@
                                     </div>
                                 </div>
                                 <form action="" method="post">
-                                    <div class="alert alert-info " style="font-size:15px;">
-                                    We are still working for you
-                                    </div>
+                                    <?php if ($errors) {
+                                        ?>
+                                        <div class="alert alert-danger " style="font-size:15px;">
+                                            <?php foreach ($errors as $value) {
+                                                echo $value;
+                                            } ?></div>
+                                            <?php
+                                        }
+                                        if ($success) {
+                                            ?>
+                                            <div class="alert alert-success " style="font-size:15px;">
+                                                <?php foreach ($success as $value) {
+                                                    echo $value;
+                                                } ?></div>
+                                                <?php
+                                            }
+                                    ?>
                                     <div class="form-group">
                                         <div class="form-label-group">
                                             <label class="form-label" for="default-01">Identifiant</label>
                                         </div>
                                         <div class="form-control-wrap">
-                                            <input type="text" name="username" class="form-control form-control-lg" id="default-01" placeholder="Enter your email address or username">
+                                            <input type="text" name="username" class="form-control form-control-lg" id="default-01" placeholder="Entrer votre identifiant">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="form-label-group">
-                                            <label class="form-label" name="userpassword" for="password">Mot de passe</label>
-                                            <a class="link link-primary link-sm" href="">Mot de passe oublié?</a>
+                                            <label class="form-label"  for="password">Mot de passe</label>
+                                            <!-- <a class="link link-primary link-sm" href="">Mot de passe oublié?</a> -->
                                         </div>
                                         <div class="form-control-wrap">
                                             <a href="#" class="form-icon form-icon-right passcode-switch lg" data-target="password">
                                                 <em class="passcode-icon icon-show icon ni ni-eye"></em>
                                                 <em class="passcode-icon icon-hide icon ni ni-eye-off"></em>
                                             </a>
-                                            <input type="password" class="form-control form-control-lg" id="password" placeholder="Enter your passcode">
+                                            <input name="userpassword" type="password" class="form-control form-control-lg" id="password" placeholder="Enter your passcode">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button class="btn btn-lg btn-secondary btn-block">Connexion</button>
+                                        <button name="login" class="btn btn-lg btn-secondary btn-block">Connexion</button>
                                     </div>
                                 </form>
                                 <!-- <div class="form-note-s2 text-center pt-4"> New on our platform? <a href="html/pages/auths/auth-register-v2.html">Create an account</a>
@@ -109,7 +124,7 @@
     </div>
     <!-- app-root @e -->
     <!-- JavaScript -->
-    <script src="./assets/js/bundle.js?ver=2.8.0"></script>
-    <script src="./assets/js/scripts.js?ver=2.8.0"></script>
+    <script src="admin/assets/js/bundle.js?ver=2.8.0"></script>
+    <script src="admin/assets/js/scripts.js?ver=2.8.0"></script>
 
 </html>

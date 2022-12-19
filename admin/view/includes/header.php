@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- <link rel="shortcut icon" href="../../images/favicon.png"> -->
     <!-- Page Title  -->
     <title>Checker_Rx | Dashboard</title>
     <!-- StyleSheets  -->
-    <link rel="stylesheet" href="./assets/css/dashlite.css?ver=2.8.0">
-    <link id="skin-default" rel="stylesheet" href="./assets/css/theme.css?ver=2.8.0">
+    <link rel="stylesheet" href="admin/assets/css/dashlite.css?ver=2.8.0">
+    <link id="skin-default" rel="stylesheet" href="admin/assets/css/theme.css?ver=2.8.0">
 </head>
 
 <body class="nk-body npc-crypto bg-white has-sidebar ">
@@ -205,3 +205,4 @@
                     </div>
                 </div>
                 <!-- main header @e -->
+                <!-- <img src="admin/images/logo.png"> -->

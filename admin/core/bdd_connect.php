@@ -1,9 +1,17 @@
 <?php 
 //connexion to database
-$host = "127.0.0.1";
-$username = "root";
-$password  = "";
-$dbname = "checker";
+//local database informations
+// $host = "127.0.0.1";
+// $username = "root";
+// $password  = "";
+// $dbname = "checker";
+
+//online database informations
+$host = "mysql.hostinger.com";
+$username = "u752792744_nono";
+$password  = "portable1Bdd";
+$dbname = "u752792744_checkerbdd";
+
 
 // j'execute la connexion  à la BDD
 

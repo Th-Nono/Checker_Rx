@@ -1,8 +1,9 @@
 <?php 
-    require_once '../includes/header.php';
+    require_once 'includes/header.php';
+    require_once '../control/indexScript.php';
  ?>
 <!-- content @s -->
- <div class="nk-content nk-content-fluid">
+<div class="nk-content nk-content-fluid">
     <div class="container-xl wide-lg">
         <div class="nk-content-body">
             <div class="nk-block-head">
@@ -206,5 +207,5 @@
 </div>
 <!-- content @e -->
 <?php 
-    require_once '../includes/footer.php';
+    require_once 'includes/footer.php';
  ?>          
